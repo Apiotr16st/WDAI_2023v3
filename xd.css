@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    font-size: 2em;
+}
+body {
+    background-color: #191414;
+    padding: 10px;
+}
+
+header, footer {
+    font-size: 2em;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #454545;
+}
+
+footer {
+    font-size: 1em;
+    padding: 1em;
+}
+
+nav {
+    background-color: #1db954;
+    border-radius: 10px;
+}
+
+nav li {
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 15px;
+}
+
+nav li:hover {
+    background-color: #63ba81;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0 10px 0;
+}
+
+aside {
+    background-color: rgb(130, 130, 130);
+    border-radius: 10px;
+    padding: 10px;
+    flex: 3;
+}
+
+.tresc {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.text {
+    background-color: #242323;
+    border-radius: 10px;
+    flex: 6;
+}
+
+.main {
+    background-color: #242323;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 10px 0 10px;
+    flex:8;
+}
+
+#cos {
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+label {
+    flex: 1;
+    text-align: right;
+    margin-right: 10px;
+}
+
+input {
+    flex: 2;
+}
+
+.empty_spc {
+    flex: 1;
+}
+
+#agreement {
+    font-size: 15px;
+}
+
+#send {
+    width: 20%;
+    background-color: #1db954;
+}
+
+@media screen and (max-width: 500px) {
+    section {
+        flex-direction: column;
+    }
+    nav {
+        flex: auto;
+    }
+    .main {
+        flex: auto;
+        margin: 10px 0 10px 0;
+    }
+}
