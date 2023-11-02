@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    font-size: 2em;
+}
+body {
+    background-color: #191414;
+    padding: 10px;
+}
+
+header, footer {
+    font-size: 2em;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0.3em;
+    background-color: #454545;
+}
+
+footer {
+    font-size: 1em;
+    padding: 1em;
+}
+
+nav {
+    background-color: #1db954;
+    border-radius: 10px;
+}
+
+nav li {
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 0.8em;
+}
+
+nav li:hover {
+    background-color: #62d48a;
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    /* min-height: 590px; */
+    height: auto;
+}
+
+.text {
+    background-color: #242323;
+    border-radius: 10px;
+    flex: 6;
+}
+
+.main {
+    background-color: #242323;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 10px;
+    flex: 8;
+}
+
+#img1, #img2, #img3, #img4{
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+aside {
+    background-color: rgb(130, 130, 130);
+    border-radius: 10px;
+    padding: 10px;
+    flex: 3;
+}
+#contact-form{
+    width: 100%;
+}
+.form-group {
+    margin-top: 20px;
+}
+
+/* label {
+    font-weight: bold;
+} */
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 1000px) {
+    section {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    nav {
+        flex: auto;
+    }
+    .main {
+        flex: auto;
+        margin: 10px 0 10px 0;
+    }
+    aside{
+        flex: auto;
+    }
+}
